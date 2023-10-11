@@ -1,0 +1,363 @@
+extends ./pug/layout
+
+block content
+	button.button-scroll__wrapper 
+		.button-scroll__btn.vacancy-btn 
+			.button-scroll__text All vacancies
+	<!-- START FIRST SCREEN -->
+	.first-screen 
+		.container
+			.first-screen__inner 
+				.first-screen__logo-wrapper 
+					.first-screen__logo 
+						img(src="https://hhcdn.ru/ichameleon/298318.svg")
+					.first-screen__logo-text 
+						img(src="https://hhcdn.ru/ichameleon/298319.svg")
+				.first-screen__text-wrapper 
+					.first-screen__text-btn-wrapper 
+						a.first-screen__social-link(href="https://www.linkedin.com/company/kpmgcca/?viewAsMember=true" target="_blank") 
+							+icon('linkedin', 'linkedin-icon')
+					.first-screen__text 
+						p Discover a world of endless possibilities with KPMG. As a global powerhouse for 130 years, we've been supporting businesses to grow, our people to achieve and our communities to thrive.
+						p Embark on a transformative journey where your ideas are valued, your voice is heard, and your potential is unleashed. Welcome to a world where your career aspirations become a reality - welcome to KPMG.
+			.first-screen__nav.nav
+				a.nav__item.content-tab.content-tab--active(href="#about") About KPMG
+				a.nav__item.content-tab(href="#graduates") For Graduates
+				a.nav__item.content-tab(href="#experience") For Experienced professionals
+				a.nav__item.content-tab(href="#it") For IT specialists
+	<!-- END FIRST SCREEN -->
+
+
+	<!-- START ABOUT CONTENT -->
+	.content.content--active.content--opacity-1.content__about
+		<!-- START S-STATS -->
+		.section.section--short-pt.s-stats
+			.container 
+				.s-stats__cards
+					+stat-card("", "<span class='countup' data-value='143'>143</span>", "countries in the world")
+					+stat-card("> ", "<span class='countup' data-value='265000'>265000</span>", "outstanding professionals <br> worldwide")
+					+stat-card("", "<span class='countup' data-value='6'>6</span>", "countries in the cluster")
+					+stat-card("> ", "<span class='countup' data-value='1400'>1400</span>", "professionals in CCA region ")
+		<!-- END S-STATS -->
+
+		<!-- START COUNTRY-LINE -->
+		.section.section--medium-pt.country-line 
+			.country-line__items-wrapper
+				img.country-line__img(src="https://hhcdn.ru/ichameleon/298321.png")
+				img.country-line__img(src="https://hhcdn.ru/ichameleon/298321.png")
+				img.country-line__img(src="https://hhcdn.ru/ichameleon/298321.png")
+				img.country-line__img(src="https://hhcdn.ru/ichameleon/298321.png")
+				img.country-line__img(src="https://hhcdn.ru/ichameleon/298321.png")
+				img.country-line__img(src="https://hhcdn.ru/ichameleon/298321.png")
+		<!-- END COUNTRY-LINE -->
+		<!-- START WORK-KPMG -->
+		.section.section--long-pt.work-kpmg 
+			.container 
+				.title.title--mb-long What does it mean to work in KPMG
+				.work-kpmg__card-wrapper 
+					.work-kpmg__card.tab-nav__item(data-tab-name="tmpl-hh__tab-1") 
+						.work-kpmg__text 
+							.work-kpmg__title Do work <br> that matters
+								p We don’t imagine <br> a better future.  <br> We’re building it.
+					.work-kpmg__card.tab-nav__item(data-tab-name="tmpl-hh__tab-2") 
+						.work-kpmg__text 
+							.work-kpmg__title Come as<br> you are
+								p We don’t know everything. That’s why we welcome everyone.
+					.work-kpmg__card.tab-nav__item(data-tab-name="tmpl-hh__tab-3") 
+						.work-kpmg__text 
+							.work-kpmg__title Thrive <br> with us
+								p You feel closer to your colleagues here. And to your full potential.
+					.work-kpmg__card.tab-nav__item(data-tab-name="tmpl-hh__tab-4") 
+						.work-kpmg__text 
+							.work-kpmg__title Learn for <br> a lifetime
+								p Grow your own way in an environment where learning is continuous.
+					.work-kpmg__card.tab-nav__item(data-tab-name="tmpl-hh__tab-5") 
+						.work-kpmg__text 
+							.work-kpmg__title Make your <br> mark  
+								p We let the future <br> guide us. Join our <br> next generation.
+				.work-kpmg__inner
+					.tab.tab-1 
+						img.work-kpmg__bg.work-kpmg__bg1(src="https://hhcdn.ru/ichameleon/298322.jpg")
+					.tab.tab-2
+						img.work-kpmg__bg.work-kpmg__bg2(src="https://hhcdn.ru/ichameleon/298323.jpg")
+					.tab.tab-3
+						img.work-kpmg__bg.work-kpmg__bg3(src="https://hhcdn.ru/ichameleon/298325.jpg")
+					.tab.tab-4
+						img.work-kpmg__bg.work-kpmg__bg4(src="https://hhcdn.ru/ichameleon/298324.jpg")
+					.tab.tab-5
+						img.work-kpmg__bg.work-kpmg__bg5(src="https://hhcdn.ru/ichameleon/298326.jpg")
+				.swiper-container.work-kpmg__slider
+					.swiper-wrapper 
+						.swiper-slide
+							.work-kpmg__slider-item.work-kpmg__slider-item--one 
+								.work-kpmg__slider-text
+									.work-kpmg__slider-title Do work that matters
+										p We don’t imagine a better future.  We’re building it.
+						.swiper-slide
+							.work-kpmg__slider-item.work-kpmg__slider-item--two
+								.work-kpmg__slider-text
+									.work-kpmg__slider-title Come as you are
+										p We don’t know everything. That’s why we welcome everyone.
+						.swiper-slide
+							.work-kpmg__slider-item.work-kpmg__slider-item--three
+								.work-kpmg__slider-text
+									.work-kpmg__slider-title Thrive with us
+										p You feel closer to your colleagues here. And to your full potential.
+						.swiper-slide
+							.work-kpmg__slider-item.work-kpmg__slider-item--four
+								.work-kpmg__slider-text
+									.work-kpmg__slider-title Learn for a lifetime
+										p Grow your own way in an environment where learning is continuous.
+						.swiper-slide
+							.work-kpmg__slider-item.work-kpmg__slider-item--five
+								.work-kpmg__slider-text
+									.work-kpmg__slider-title Make your mark 
+										p We let the future guide us. Join our next generation.
+
+		<!-- END WORK-KPMG -->
+		<!-- START EXPERTS-CARDS -->
+		.section.section--medium.experts-cards
+			.container
+				.title.title--mb-long Learn more about areas we are experts in
+				.experts-cards__inner 
+					.experts-cards__item.experts-cards__item--one
+						.experts-cards__text.experts-cards__text--one 
+							.experts-cards__title Audit
+								.experts-cards__list
+									p Financial Services
+									p Commercial  
+									p Energy
+					.experts-cards__item.experts-cards__item--two
+						.experts-cards__text.experts-cards__text--two
+							.experts-cards__title Tax
+								.experts-cards__list
+									p Mergers&Acqusitions
+									p International Tax
+									p Indirect Tax & Customs
+									p Corporate Tax
+									p CMSO / Tax Compliance
+									p GMS (Global Mobility Services) / Tax Compliance
+									p Transfer Pricing
+					.experts-cards__item.experts-cards__item--three
+						.experts-cards__text.experts-cards__text--three
+							.experts-cards__title Legal
+								.experts-cards__list.experts-cards__list--legal
+									p Real Estate
+									p Legal Compliance
+									p Commercial Litigation
+									p Employment and Immigration Law
+									p New Law & Legal Technology
+									p ESG
+									p Commercial Law
+									p M&A
+									p Business Reorganization
+									p Corporate Advisory
+									p Data, Digital and Technology
+									p IP Law
+					.experts-cards__item.experts-cards__item--four
+						.experts-cards__text.experts-cards__text--four
+							.experts-cards__title Deals
+								.experts-cards__list
+									p Debt & PPP Advisory
+									p Mergers&Acquisitions
+									p Transaction Services
+									p Valuation
+					.experts-cards__item.experts-cards__item--five
+						.experts-cards__text.experts-cards__text--five
+							.experts-cards__title Consulting
+								.experts-cards__list
+									p Accounting Advisory Services
+									p Forensic
+									p GRCS & ORS (Governance, Risk and Compliance Servies) & Operational Risks and Sustainability
+									p Strategy & Operations
+									p Digital CFO
+									p Financial Risk Management
+					.experts-cards__item.experts-cards__item--six
+						.experts-cards__text.experts-cards__text--six
+							.experts-cards__title Technology
+								.experts-cards__list
+									p CIO-Advisory
+									p Data&Al
+									p Cybersecurity
+									p IT Audit
+									p IT Solutions
+		<!-- END EXPERTS-CARDS -->
+		<!-- START GALLERY -->
+		.section.gallery 
+			.container 
+				.gallery__inner
+					.gallery__title Our offices
+					.swiper-container.gallery-slider 
+						.swiper-wrapper 
+							.swiper-slide
+								img(src="https://hhcdn.ru/ichameleon/298340.jpg")
+							.swiper-slide
+								img(src="https://hhcdn.ru/ichameleon/298339.jpg")
+							.swiper-slide
+								img(src="https://hhcdn.ru/ichameleon/298344.jpg")
+							.swiper-slide
+								img(src="https://hhcdn.ru/ichameleon/298342.jpg")
+							.swiper-slide
+								img(src="https://hhcdn.ru/ichameleon/298343.jpg")
+							.swiper-slide
+								img(src="https://hhcdn.ru/ichameleon/298341.jpg")
+				.gallery__inner
+					.swiper-container.gallery-slider-two
+						.swiper-wrapper 
+							.swiper-slide
+								img(src="https://hhcdn.ru/ichameleon/298346.jpg")
+							.swiper-slide
+								img(src="https://hhcdn.ru/ichameleon/298345.jpg")
+					.gallery__title Our people
+		<!-- END GALLERY -->
+	<!-- END ABOUT CONTENT -->
+
+
+	<!-- START GRADUATES CONTENT -->
+	.content.content__graduates
+		<!-- START GRADUATES -->
+		.section.section--medium-pt.graduates 
+			.container 
+				.graduates__inner 
+					.graduates__text KPMG hires, on the annual basis around 200 graduates from universities and young professionals. Whether you are a student at university, soon-to-be graduate or a recent graduate, you have an excellent opportunity to join KPMG for career or internship <br> opportunities
+		<!-- END GRADUATES -->
+		<!-- START OPPORTUNITY -->
+		.section.section--medium-pt.opportunity 
+			.container 
+				.title.title--mb-long Find opportunity everywhere with KPMG
+				.opportunity__inner 
+					img(src="https://hhcdn.ru/ichameleon/298348.png")
+					.opportunity__cards 
+						.opportunity__card 
+							.opportunity__card-title Inclusion, Diversity, & Equity (IDE) 
+							.opportunity__card-text 
+								p 48.5% representation of women
+								p More than 30% of women in top management
+								p 67% employees under 35
+						.opportunity__card 
+							.opportunity__card-title The KPMG culture
+							.opportunity__card-text 
+								p Trust and collaboration
+								p Speak up approach
+								p Open-door culture
+								p Supportive teams
+								p Experienced mentor
+						.opportunity__card 
+							.opportunity__card-title Well-being
+							.opportunity__card-text 
+								p Team buildings, retreats, events
+								p Seasonal business and non-business events
+								p Mental health and well-being support
+								p Supportive medical insurance
+								p Extended number of days-off
+						.opportunity__card 
+							.opportunity__card-title Career opportunities and progression
+							.opportunity__card-text 
+								p Clear and rapid career path
+								p Wide range of career opportunities
+								p Global network
+								p Secondments
+						.opportunity__card 
+							.opportunity__card-title Learning & Development
+							.opportunity__card-text.opportunity__card-text--last 
+								p Certification
+								p ACCA
+								p Soft and hard skills development
+								p External and internal trainings
+		<!-- END OPPORTUNITY -->
+	<!-- END GRADUATES CONTENT -->
+
+	<!-- START EXPERIENCE CONTENT -->
+	.content.content__experience
+		<!-- START EXPERIENCE -->
+		.section.section--medium-pt.experience 
+			.container 
+				.experience__inner 
+					.experience__text KPMG highly esteems experienced professionals who bring valuable knowledge and fresh perspectives. We offer opportunities for skill development and career <br> growth, with the Partner <br> position as a pinnacle <br> achievement.
+		<!-- END EXPERIENCE -->
+		<!-- START WHY-KPMG -->
+		.section.section--long.why-kpmg
+			.container 
+				.title.title--mb-long Why KPMG
+				.why-kpmg__inner
+					+why-kpmg('1', 'Global company')
+					+why-kpmg('2', 'World Class Clients and great Networking')
+					+why-kpmg('3', 'Fascinating projects in diverse industries')
+					+why-kpmg('4', 'Our unique corporate culture')
+					+why-kpmg('5', 'Various benefits and recognition programs')
+					.why-kpmg__card
+						.why-kpmg__icon-wrapper
+							img(src="https://hhcdn.ru/ichameleon/298349.png")
+						.why-kpmg__icon-title Social events and parties
+					+why-kpmg('8', 'Corporate training – Learning & Development')
+					+why-kpmg('7', 'Competitive salary')
+					+why-kpmg('9', 'Sustainable career path')
+		<!-- END WHY-KPMG -->
+	<!-- END EXPERIENCE CONTENT -->
+
+	<!-- START IT CONTENT -->
+	.content.content__it
+		<!-- START IT -->
+		.section.section--medium-pt.it 
+			.container 
+				.it__inner
+					p Discover the power of KPMG, a global leader in Digital Transformation & Digital Services, ranked 3rd overall by ALM Intelligence. Harnessing the power of technology, we tackle business problems with precision. Our deep understanding of diverse industries, combined with technological prowess, enables us to guide companies through any challenge they face.
+		<!-- END IT -->
+		<!-- START CIO -->
+		.section.section--medium-pt.advisory
+			.advisory__wrapper  
+				.container  
+					.advisory__title CIO Advisory
+					.advisory__text 
+						p Increase of IT transparency and efficiency
+						p Acceleration of cloud technologies adoption and <br> improvement of time-to-market for <br> new products and services
+						p Modernization of legacy systems and migration to new platforms and technologies
+		<!-- END CIO -->
+
+		<!-- START ANALYTICS  -->
+		.section.analytics 
+			.container  
+				.title.title--mb-short Data & Analytics 
+				.analytics__text 
+					p Enablement of informed and data-driven decision making
+					p Improvement of quality and enhancement of trust to your data
+					p Increase in knowledge about your customer by collection and analysis of data about them
+		<!-- END ANALYTICS -->
+		<!-- START IMPLEMENTATION -->
+		.section.implementation
+			.container
+				.implementation__inner 
+					.implementation__title System implementation
+					.implementation__text 
+						p Rapid automation of your processes using robots and low-code
+						P Elimination of siloed data and integration of data from different sources
+		<!-- END IMPLEMENTATION -->
+		<!-- START ANALYTICS  -->
+		.section.analytics 
+			.container  
+				.title.title--mb-short Value Chain Transformation
+				.analytics__text 
+					p Identification of opportunities for cost reduction and optimization throughout  value chain
+					p Digitization of supply chain
+		<!-- END ANALYTICS -->
+		<!-- START CYBER -->
+		.section.cyber
+			.container
+				.cyber__inner 
+					.cyber__text-wrapper 
+						.cyber__title Cyber Security
+						.cyber__text 
+							p Getting assurance in cyber maturity
+							p Detection, removement, and prevention of malware and ransomware attacks
+							p Implementation of measures to protect sensitive data and prevent identity theft
+		<!-- END CYBER -->
+		<!-- START ANALYTICS  -->
+		.section.analytics 
+			.container  
+				.title.title--mb-short Public Sector Consulting 
+				.analytics__text 
+					p Improvement of SMART ratings for your city
+					p Personalization of public services to better meet the needs and preferences of citizens
+					p Support and guidance for G-Cloud concept
+		<!-- END ANALYTICS -->
+	<!-- END IT CONTENT -->

@@ -1,0 +1,918 @@
+@import "./../assets/vars";
+@import "./../assets/keyframes";
+
+// BREAKPOINT LAPTOP
+@media (max-width: $ss_laptop) {
+	.container {
+		max-width: 880px;
+	}
+
+	.wrapper {
+		font-size: 16px;
+	}
+
+	.stat-card {
+		width: 50%;
+		&__number {
+			font-size: 48px;
+		}
+	}
+
+	.s-stats {
+		&__cards {
+			flex-wrap: wrap;
+		}
+	}
+
+	.title {
+		font-size: 38px;
+	}
+
+	.nav {
+		flex-wrap: wrap;
+
+		&__item {
+			width: 40%;
+			padding: 10px 20px;
+			text-align: center;
+
+			&:nth-child(3),
+			&:nth-child(4) {
+				margin-top: 15px;
+			}
+
+		}
+	}
+
+	.work-kpmg {
+		&__inner {
+			height: 270px;
+		}
+
+		&__card {
+			height: 270px;
+		}
+
+		&__text {
+			top: 180px;
+		}
+
+		&__title {
+			font-size: 19px;
+			line-height: 26px;
+
+			& p br {
+				display: none;
+			}
+		}
+
+		&__card:hover .work-kpmg__text {
+			top: 40px;
+		}
+	}
+
+	.experts-cards {
+		&__title {
+			font-size: 38px;
+		}
+
+		&__list p {
+			line-height: 22px;
+		}
+	}
+
+	.gallery__title {
+		font-size: 65px;
+	}
+
+	.experience__text {
+		width: 47.5%;
+	}
+
+	.why-kpmg__icon-title {
+		margin-left: 16px;
+		font-size: 18px;
+		line-height: 28px;
+	}
+
+	.it__inner {
+		font-size: 18px;
+	}
+
+	.analytics {
+		padding: 132px 0;
+
+		&__text {
+			font-size: 20px;
+		}
+	}
+
+	.implementation {
+		height: 530px;
+		padding: 44px;
+
+		&__text {
+			width: 60%;
+			margin-top: 20px;
+		}
+	}
+
+	.cyber {
+		height: 530px;
+		padding: 44px;
+
+		&__title {
+			font-size: 38px;
+			line-height: 52px;
+		}
+
+		&__text {
+			margin-top: 10px;
+			font-size: 18px;
+			line-height: 36px;
+		}
+	}
+}
+
+// BREAKPOINT TABLET
+@media (max-width: $ss_tablet) {
+	.wrapper {
+		font-size: 15px;
+	}
+
+	.container {
+		padding: 0 15px;
+	}
+
+	.first-screen {
+		&__inner {
+			padding: 0;
+			margin-bottom: 50px;
+			height: 500px;
+			justify-content: center;
+		}
+
+		&__text-btn-wrapper {
+			display: flex;
+		}
+
+		&__logo-wrapper {
+			width: 90%;
+		}
+
+		&__text-wrapper {
+			width: 90%;
+			margin: 30px 0 0;
+		}
+
+		&__btn-wrapper {
+			margin-left: 15px;
+			padding: 8px 22px;
+
+			&--default {
+				display: block;
+			}
+
+			&--rotate {
+				display: none;
+			}
+		}
+	}
+
+	.nav {
+		flex-wrap: wrap;
+
+		&__item {
+			width: 49%;
+			padding: 10px 20px;
+			text-align: center;
+
+			&:nth-child(3),
+			&:nth-child(4) {
+				margin-top: 15px;
+			}
+
+		}
+	}
+
+	.work-kpmg__card-wrapper {
+		display: none;
+	}
+
+	.work-kpmg__inner {
+		display: none;
+	}
+
+	.work-kpmg__slider {
+		display: block;
+		height: 200px;
+
+		&-item {
+			height: 200px;
+			background-repeat: no-repeat;
+			position: relative;
+			background-size: cover;
+			background-position: center;
+			z-index: -2;
+
+			&--one {
+				background-image: url(https://hhcdn.ru/ichameleon/298322.jpg);
+			}
+
+			&--two {
+				background-image: url(https://hhcdn.ru/ichameleon/298323.jpg);
+			}
+
+			&--three {
+				background-image: url(https://hhcdn.ru/ichameleon/298325.jpg);
+			}
+
+			&--four {
+				background-image: url(https://hhcdn.ru/ichameleon/298324.jpg);
+			}
+
+			&--five {
+				background-image: url(https://hhcdn.ru/ichameleon/298326.jpg);
+			}
+		}
+
+		&-text {
+			padding: 30px;
+			height: 200px;
+			position: relative;
+
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				z-index: -1;
+				height: 100%;
+				background-color: rgba(0, 0, 0, 0.5);
+			}
+		}
+
+		&-title {
+			color: #fff;
+			z-index: 1;
+			font-size: 36px;
+			line-height: 46px;
+
+			& p {
+				margin-top: 15px;
+				font-size: 22px;
+				line-height: 28px;
+			}
+		}
+	}
+
+	.stat-card {
+		width: 50%;
+		text-align: center;
+
+		&:nth-child(3),
+		&:nth-child(4) {
+			margin-top: 15px;
+		}
+
+		&__text {
+			margin-top: 14px;
+		}
+
+		&__number {
+			font-size: 38px;
+			line-height: 44px;
+
+		}
+	}
+
+	.title {
+		font-size: 26px;
+		margin-bottom: 32px;
+	}
+
+	.experts-cards__item {
+		width: 49%;
+
+		&--three {
+			margin-top: 24px;
+		}
+
+		&--four {
+			order: 6;
+		}
+	}
+
+	.gallery__title {
+		font-size: 40px;
+	}
+
+	.graduates {
+		&__inner {
+			height: 350px;
+		}
+
+		&__text {
+			width: 40%;
+			font-size: 16px;
+			line-height: 26px;
+
+			& br {
+				display: none;
+			}
+		}
+	}
+
+	.opportunity {
+		padding-bottom: 80px;
+	}
+
+	.experience {
+		&__inner {
+			height: 350px;
+		}
+
+		&__text {
+			width: 40%;
+			font-size: 16px;
+			line-height: 26px;
+
+			& br {
+				display: none;
+			}
+		}
+	}
+
+	.why-kpmg {
+		&__inner {
+			justify-content: center;
+		}
+
+		&__card {
+			width: 49%;
+
+			&:nth-child(3) {
+				margin-top: 32px;
+			}
+		}
+
+		&__icon-title {
+			font-size: 16px;
+		}
+	}
+
+	.it__inner {
+		font-size: 14px;
+		line-height: 26px;
+	}
+
+	.advisory {
+		&__wrapper {
+			height: 350px;
+		}
+
+		&__title {
+			font-size: 28px;
+			line-height: 32px;
+		}
+
+		&__text {
+			width: 62%;
+			margin-top: 15px;
+			font-size: 14px;
+			line-height: 26px;
+		}
+	}
+
+	.analytics {
+		padding: 80px 0;
+
+		&__text {
+			font-size: 16px;
+			line-height: 26px;
+		}
+	}
+
+	.implementation {
+		height: 350px;
+		padding: 25px;
+
+		&__title {
+			font-size: 28px;
+			line-height: 32px;
+		}
+
+		&__text {
+			width: 62%;
+			margin-top: 15px;
+			font-size: 14px;
+			line-height: 26px;
+		}
+	}
+
+	.cyber {
+		height: 350px;
+		padding: 0px;
+		background-position: -70px 0;
+
+		&__text-wrapper {
+			margin-top: 25px;
+			width: 40%;
+		}
+
+		&__title {
+			font-size: 28px;
+			line-height: 32px;
+		}
+
+		&__text {
+			margin-top: 15px;
+			font-size: 14px;
+			line-height: 26px;
+		}
+	}
+}
+
+// BREAKPOINT SM TABLET
+@media (max-width: $ss_sm_tablet) {
+	.wrapper {
+		font-size: 14px;
+	}
+
+	.nav {
+		&__item {
+			width: 90%;
+			padding: 10px;
+
+			&:nth-child(2),
+			&:nth-child(3),
+			&:nth-child(4) {
+				margin-top: 10px;
+			}
+		}
+	}
+
+	.first-screen {
+		margin-top: -70px;
+	}
+
+	.button-scroll {
+		&__wrapper {
+			width: 40px;
+			padding: 60px 8px;
+			transform: translate(-55px, 50px);
+		}
+
+		&__btn {
+			transform: rotate(270deg);
+			position: relative;
+		}
+
+		&__text {
+			position: absolute;
+			width: 94px;
+			transform: translate(-36%, -50%);
+		}
+	}
+
+	.title {
+		font-size: 22px;
+		margin-bottom: 26px;
+	}
+
+	.experts-cards__item {
+		width: 75%;
+		margin: 15px auto 0;
+
+		&--four {
+			order: 6;
+		}
+	}
+
+	.graduates {
+		&__inner {
+			background-position: -40px 0;
+		}
+
+		&__text {
+			width: 40%;
+			font-size: 14px;
+			line-height: 22px;
+		}
+	}
+
+	.opportunity {
+		&__inner img {
+			display: none;
+		}
+
+		&__cards {
+			display: block;
+		}
+
+		&__card {}
+	}
+
+	.experience__text {
+		width: 62%;
+	}
+
+	.why-kpmg__icon-title {
+		font-size: 14px;
+		line-height: 22px;
+	}
+
+	.why-kpmg__icon-wrapper {
+		min-width: 58px;
+		min-height: 58px;
+	}
+
+	.advisory {
+		&__wrapper {
+			position: relative;
+
+			&::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0, 0, 0, 0.5);
+			}
+		}
+	}
+
+	.analytics {
+		padding: 40px 0;
+	}
+
+	.implementation {
+		padding: 20px 0;
+
+		&__text {
+			line-height: 24px;
+		}
+	}
+
+	.cyber {
+		position: relative;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.5);
+		}
+
+		&__text-wrapper {
+			width: 50%;
+		}
+	}
+}
+
+// BREAKPOINT PHONE
+@media (max-width: $ss_phone) {
+	.wrapper {
+		width: calc(100% + 30px);
+		margin: 0 -15px;
+	}
+
+	.first-screen {
+
+		&__logo-wrapper {
+			width: 100%;
+		}
+
+		&__text-wrapper {
+			width: 90%;
+			margin-top: 30px;
+		}
+
+		&__text p+p {
+			margin-top: 10px;
+		}
+	}
+
+	.nav {
+		justify-content: start;
+
+		&__item {
+			width: 90%;
+
+			&:nth-child(2),
+			&:nth-child(3),
+			&:nth-child(4) {
+				margin-top: 10px;
+			}
+		}
+	}
+
+	.stat-card {
+		width: 100%;
+
+		&:nth-child(2),
+		&:nth-child(3),
+		&:nth-child(4) {
+			margin-top: 10px;
+		}
+
+		&__number {
+			font-size: 38px;
+			line-height: 44px;
+		}
+	}
+
+	.country-line__items-wrapper {
+		padding: 15px;
+
+		& img {
+			height: 50px;
+			min-width: 600px;
+		}
+	}
+
+	.title {
+		font-size: 16px;
+		margin-bottom: 20px;
+		line-height: 26px;
+	}
+
+	.work-kpmg__slider {
+		&-title {
+			width: 57%;
+			color: #fff;
+			z-index: 1;
+			font-size: 28px;
+			line-height: 32px;
+
+			& p {
+				margin-top: 20px;
+				font-size: 16px;
+				line-height: 20px;
+			}
+		}
+	}
+
+	.experts-cards {
+		&__item {
+			width: 100%;
+			height: 315px;
+
+			&:hover .experts-cards__text--one {
+				top: 105px;
+			}
+
+			&:hover .experts-cards__text--two {
+				top: 20px;
+			}
+
+			&:hover .experts-cards__text--four {
+				top: 90px;
+			}
+
+			&:hover .experts-cards__text--five {
+				top: 10px;
+			}
+
+			&:hover .experts-cards__text--six {
+				top: 60px;
+			}
+		}
+
+		&__list {
+			& p {
+				font-size: 14px;
+				line-height: 20px;
+			}
+		}
+
+		&__text {
+			top: 220px;
+
+			&--three {
+				top: 247px;
+			}
+		}
+	}
+
+	.gallery {
+		padding: 40px 0 60px;
+
+		&__title {
+			font-size: 20px;
+		}
+
+		&__inner {
+			&+& {
+				margin-top: 30px;
+			}
+		}
+	}
+
+	.graduates {
+		&__inner {
+			height: 200px;
+			position: relative;
+			padding: 12px;
+
+			&::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0, 0, 0, 0.7);
+			}
+		}
+
+		&__text {
+			z-index: 1;
+			width: 100%;
+			font-size: 14px;
+		}
+	}
+
+	.opportunity {
+
+		&__card {
+			padding: 10px 20px;
+
+			&+& {
+				margin-top: 10px;
+			}
+
+			&:nth-child(1) {
+				height: 135px;
+			}
+
+			&:nth-child(2) {
+				height: 150px;
+			}
+
+			&:nth-child(3) {
+				height: 190px;
+			}
+
+			&:nth-child(4) {
+				height: 150px;
+			}
+
+			&:nth-child(5) {
+				height: 135px;
+			}
+
+			&-title {
+				font-size: 16px;
+				line-height: 20px;
+				margin-bottom: 10px;
+			}
+
+			&-text {
+				font-size: 14px;
+				line-height: 20px;
+			}
+		}
+	}
+
+	.experience {
+		&__inner {
+			height: 200px;
+			position: relative;
+			padding: 12px;
+
+			&::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0, 0, 0, 0.7);
+			}
+		}
+
+		&__text {
+			z-index: 1;
+			width: 100%;
+			font-size: 14px;
+		}
+	}
+
+	.why-kpmg {
+		&__card {
+			width: 100%;
+
+			&:nth-child(2),
+			&:nth-child(3),
+			&:nth-child(4),
+			&:nth-child(5),
+			&:nth-child(6),
+			&:nth-child(7),
+			&:nth-child(8),
+			&:nth-child(9) {
+				margin-top: 15px;
+			}
+		}
+	}
+
+	.advisory {
+		&__wrapper {
+			height: 200px;
+		}
+
+		&__title {
+			font-size: 18px;
+			line-height: 20px;
+		}
+
+		&__text {
+			width: 100%;
+			margin-top: 10px;
+			line-height: 18px;
+
+			& p {
+				& br {
+					display: none;
+				}
+
+				&::before {
+					top: 7px;
+				}
+			}
+		}
+	}
+
+	.analytics {
+		&__text {
+			font-size: 14px;
+			line-height: 20px;
+
+			& p {
+				&::before {
+					top: 9px;
+				}
+			}
+		}
+	}
+
+	.implementation {
+		height: 200px;
+		position: relative;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.5);
+		}
+
+		&__title {
+			font-size: 18px;
+			line-height: 22px;
+		}
+
+		&__text {
+			width: 65%;
+			line-height: 20px;
+
+			& p {
+				&::before {
+					top: 9px;
+				}
+			}
+		}
+	}
+
+	.cyber {
+		height: 200px;
+
+		&__text-wrapper {
+			width: 100%;
+		}
+
+		&__title {
+			font-size: 18px;
+			line-height: 22px;
+		}
+
+		&__text {
+			margin-top: 10px;
+			line-height: 24px;
+
+			& p {
+				&::before {
+					top: 10px;
+				}
+			}
+		}
+	}
+}
